@@ -1,0 +1,7 @@
+{
+    "extends": [
+        "@imaginary-cloud/prettier-config",
+        "prettier"
+    ],
+    "singleQuote": true
+}
