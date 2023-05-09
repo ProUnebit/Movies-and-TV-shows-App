@@ -1,9 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './components/App';
 import './index.scss';
 
-ReactDOM.createRoot(document.getElementById('app')).render(
+// let container = null;
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     if ( !container ) {
+//         container = document.getElementById('app');
+//         const root = createRoot(container);
+//         root.render(
+//             <React.StrictMode>
+//                 <App />
+//             </React.StrictMode>
+//         )
+//     }
+// })
+
+const ROOT = createRoot(document.getElementById('app'));
+ROOT.render(
     <React.StrictMode>
         <App />
     </React.StrictMode>

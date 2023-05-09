@@ -14,7 +14,7 @@ module.exports = {
     devtool : devTool,
     devServer: {
         port: 3000,
-        open: true,
+        open: false,
         hot: true,
         historyApiFallback: true,
         headers: {'Access-Control-Allow-Origin': '*'}
