@@ -1,1 +1,1 @@
-# MovieLand App
+# Movix App
