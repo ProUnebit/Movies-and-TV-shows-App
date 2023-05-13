@@ -19,9 +19,9 @@ import './index.scss';
 
 const ROOT = createRoot(document.getElementById('app'));
 ROOT.render(
-    <React.StrictMode>
+    // <React.StrictMode>
         <App />
-    </React.StrictMode>
+    // </React.StrictMode>
 )
 
 const devMode = process.env.NODE_ENV === 'development';
