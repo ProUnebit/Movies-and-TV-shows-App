@@ -3,25 +3,17 @@ import { createRoot } from 'react-dom/client';
 import App from './components/App';
 import './index.scss';
 
-// let container = null;
+import { store } from './store/store';
+import { Provider } from 'react-redux';
 
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     if ( !container ) {
-//         container = document.getElementById('app');
-//         const root = createRoot(container);
-//         root.render(
-//             <React.StrictMode>
-//                 <App />
-//             </React.StrictMode>
-//         )
-//     }
-// })
+
+
 
 const ROOT = createRoot(document.getElementById('app'));
 ROOT.render(
-    // <React.StrictMode>
+    <Provider store={store}>
         <App />
-    // </React.StrictMode>
+    </Provider>
 )
 
 const devMode = process.env.NODE_ENV === 'development';
