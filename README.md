@@ -1,1 +1,1 @@
-# Movix App
+# Movix Application
