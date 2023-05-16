@@ -76,9 +76,9 @@ const DetailsBanner = ({ video, crew }) => {
                                             {data.tagline}
                                         </div>
 
-                                        <Genres data={_genres} />
+                                        {/* <Genres data={_genres} /> */}
 
-                                        <div className="row">
+                                        {/* <div className="row">
                                             <CircleRating
                                                 rating={data.vote_average.toFixed(
                                                     1
@@ -96,18 +96,18 @@ const DetailsBanner = ({ video, crew }) => {
                                                     Watch Trailer
                                                 </span>
                                             </div>
-                                        </div>
+                                        </div> */}
 
-                                        <div className="overview">
+                                        {/* <div className="overview">
                                             <div className="heading">
                                                 Overview
                                             </div>
                                             <div className="description">
                                                 {data.overview}
                                             </div>
-                                        </div>
+                                        </div> */}
 
-                                        <div className="info">
+                                        {/* <div className="info">
                                             {data.status && (
                                                 <div className="infoItem">
                                                     <span className="text bold">
@@ -142,9 +142,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     </span>
                                                 </div>
                                             )}
-                                        </div>
+                                        </div> */}
 
-                                        {director?.length > 0 && (
+                                        {/* {director?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Director:{" "}
@@ -160,9 +160,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        {writer?.length > 0 && (
+                                        {/* {writer?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Writer:{" "}
@@ -178,9 +178,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        {data?.created_by?.length > 0 && (
+                                        {/* {data?.created_by?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Creator:{" "}
@@ -200,7 +200,7 @@ const DetailsBanner = ({ video, crew }) => {
                                                     )}
                                                 </span>
                                             </div>
-                                        )}
+                                        )} */}
                                     </div>
                                 </div>
                                 <VideoPopup
