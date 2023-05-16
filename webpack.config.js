@@ -38,10 +38,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: devMode ? 'css/build_main.[contenthash:10].css' : 'css/build_main.min.css'
         }),
-        // new ImportMetaEnvWebpackPlugin(["APP_TMDB_TOKEN"]),
-        // new webpack.DefinePlugin({
-        //     "import.meta.env.APP_TMDB_TOKEN": JSON.stringify(process.env.APP_TMDB_TOKEN),
-        // }),
         require("@import-meta-env/unplugin").webpack({
             env: ".env",
             example: ".env.example",
@@ -113,6 +109,15 @@ module.exports = {
                     }
                 ]
             },
+            // {
+            //     test: /\.svg$/i,
+            //     issuer: /\.[jt]sx?$/,
+            //     use: [
+            //         { 
+            //             loader: '@svgr/webpack', 
+            //         }
+            //     ],
+            // },
             {
                 test: /\.jsx?$/,
                 exclude: ['/node_modules/'],

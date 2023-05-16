@@ -12,6 +12,7 @@ import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImage/img.jsx";
 import PosterFallback from "../../../img/no-poster.png";
 import { PlayIcon } from "../Playbtn";
+// import PlayIcon from '../../../img/play-icon.svg';
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
 const DetailsBanner = ({ video, crew }) => {
@@ -23,9 +24,9 @@ const DetailsBanner = ({ video, crew }) => {
 
     const { url } = useSelector((state) => state.home);
 
-    const _genres = data?.genres?.map((g) => g.id);
+    const _genres = data?.genres?.map(g => g.id);
 
-    const director = crew?.filter((f) => f.job === "Director");
+    const director = crew?.filter(f => f.job === "Director");
     const writer = crew?.filter(
         (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
     );
@@ -66,23 +67,17 @@ const DetailsBanner = ({ video, crew }) => {
                                     </div>
                                     <div className="right">
                                         <div className="title">
-                                            {`${
-                                                data.name || data.title
-                                            } (${dayjs(
-                                                data?.release_date
-                                            ).format("YYYY")})`}
+                                            {`${data.name || data.title} (${dayjs(data?.release_date).format("YYYY")})`}
                                         </div>
                                         <div className="subtitle">
                                             {data.tagline}
                                         </div>
 
-                                        {/* <Genres data={_genres} /> */}
+                                        <Genres data={_genres} />
 
-                                        {/* <div className="row">
+                                        <div className="row">
                                             <CircleRating
-                                                rating={data.vote_average.toFixed(
-                                                    1
-                                                )}
+                                                rating={data.vote_average.toFixed(1)}
                                             />
                                             <div
                                                 className="playbtn"
@@ -91,23 +86,24 @@ const DetailsBanner = ({ video, crew }) => {
                                                     setVideoId(video.key);
                                                 }}
                                             >
+                                                {/* <img src={PlayIcon} alt="playbtn" /> */}
                                                 <PlayIcon />
                                                 <span className="text">
                                                     Watch Trailer
                                                 </span>
                                             </div>
-                                        </div> */}
+                                        </div>
 
-                                        {/* <div className="overview">
+                                        <div className="overview">
                                             <div className="heading">
                                                 Overview
                                             </div>
                                             <div className="description">
                                                 {data.overview}
                                             </div>
-                                        </div> */}
+                                        </div>
 
-                                        {/* <div className="info">
+                                        <div className="info">
                                             {data.status && (
                                                 <div className="infoItem">
                                                     <span className="text bold">
@@ -142,9 +138,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     </span>
                                                 </div>
                                             )}
-                                        </div> */}
+                                        </div>
 
-                                        {/* {director?.length > 0 && (
+                                        {director?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Director:{" "}
@@ -160,9 +156,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )} */}
+                                        )}
 
-                                        {/* {writer?.length > 0 && (
+                                        {writer?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Writer:{" "}
@@ -178,9 +174,9 @@ const DetailsBanner = ({ video, crew }) => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )} */}
+                                        )}
 
-                                        {/* {data?.created_by?.length > 0 && (
+                                        {data?.created_by?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Creator:{" "}
@@ -200,7 +196,7 @@ const DetailsBanner = ({ video, crew }) => {
                                                     )}
                                                 </span>
                                             </div>
-                                        )} */}
+                                        )}
                                     </div>
                                 </div>
                                 <VideoPopup

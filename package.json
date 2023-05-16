@@ -20,6 +20,7 @@
     "@imaginary-cloud/prettier-config": "^1.0.0",
     "@import-meta-env/cli": "^0.6.1",
     "@import-meta-env/unplugin": "^0.4.8",
+    "@svgr/webpack": "^8.0.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
