@@ -53,6 +53,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                 {title && <div className="carouselTitle">{title}</div>}
                 <BsFillArrowLeftCircleFill
                     className="carouselLeftNav arrow"
+                    // style={{color: '#da2f68'}}
                     onClick={() => navigation("left")}
                 />
                 <BsFillArrowRightCircleFill
@@ -69,13 +70,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                 <div
                                     key={item.id}
                                     className="carouselItem"
-                                    onClick={() =>
-                                        navigate(
-                                            `/${item.media_type || endpoint}/${
-                                                item.id
-                                            }`
-                                        )
-                                    }
+                                    onClick={() => navigate(`/${item.media_type || endpoint}/${item.id}`)}
                                 >
                                     <div className="posterBlock">
                                         <Img src={posterUrl} />

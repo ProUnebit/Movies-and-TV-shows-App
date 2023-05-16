@@ -12,13 +12,13 @@
         font-weight: normal;
     }
     .arrow {
-        font-size: 30px;
-        color: black;
+        font-size: 40px;
+        color: rgb(187, 185, 185);
         position: absolute;
-        top: 44%;
+        top: 40%;
         transform: translateY(-50%);
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.6;
         z-index: 1;
         display: none;
         @include md {
