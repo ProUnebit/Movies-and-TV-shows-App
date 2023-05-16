@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import './Details.scss'
 
 import useFetch from "../../hooks/useFetch";
-// import DetailsBanner from "./detailsBanner/DetailsBanner";
+import DetailsBanner from "./detailsBanner/DetailsBanner";
 // import Cast from "./cast/Cast";
 // import VideosSection from "./videosSection/VideosSection";
 // import Similar from "./carousels/Similar";
@@ -18,8 +18,8 @@ const Details = () => {
 
     return (
         <div>
-            {/* <DetailsBanner video={data?.results?.[0]} crew={credits?.crew} />
-            <Cast data={credits?.cast} loading={creditsLoading} />
+            <DetailsBanner video={data?.results?.[0]} crew={credits?.crew} />
+            {/* <Cast data={credits?.cast} loading={creditsLoading} />
             <VideosSection data={data} loading={loading} />
             <Similar mediaType={mediaType} id={id} />
             <Recommendation mediaType={mediaType} id={id} /> */}
