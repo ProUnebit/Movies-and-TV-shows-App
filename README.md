@@ -1,6 +1,6 @@
 # Movix Application
 
-<sub style="color:orange">*Turn on VPN if you are from Russia* 😉</sub>
+<span style="color:orange">*Turn on VPN if you are from Russia* 😉</span>
 
 **About:** Movies & TV shows application (React, RRD 6, Redux, Infinite scrolling, Lazy load images)
 
