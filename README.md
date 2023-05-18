@@ -1,6 +1,6 @@
 # Movix Application
 
-**About:** Movies & TV shows applicaton (React, RRD6, Redux)
+**About:** Movies & TV shows application (React, RRD 6, Redux, Infinite scrolling, Lazy load images)
 
 **Link:** [https://movix-application.netlify.app](https://movix-application.netlify.app)
 
