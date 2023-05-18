@@ -93,6 +93,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                             )}
                                         </span>
                                     </div>
+                                    {/* <Link to={`/${item.media_type || endpoint}/${item.id}`} style={{display: 'none'}}/> */}
                                 </div>
                             );
                         })}
