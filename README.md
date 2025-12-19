@@ -1,6 +1,6 @@
 # Movix Application
 
-<sub>Turn on VPN if you are from Russia 😉</sub>
+<sub>*Turn on VPN if you are from Russia 😉</sub>
 
 **About:** Movies & TV shows application (React, RRD 6, Redux, Infinite scrolling, Lazy load images)
 
@@ -10,8 +10,5 @@
 
 - - -
 
-![](https://raw.githubusercontent.com/ProUnebit/Reminder_ToMe_Reminder/master/src/assets/img/mvx-1.png)
-![](https://raw.githubusercontent.com/ProUnebit/Reminder_ToMe_Reminder/master/src/assets/img/mvx-2.png)
+![](https://github.com/user-attachments/assets/7830cbb7-6532-411b-836f-3b7849abc07a)
 
-- - -
-Mail for communication: <ProUnebit@yandex.ru>
