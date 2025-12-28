@@ -4,7 +4,7 @@
 
 **About:** Movies & TV shows application (React, RRD 6, Redux, Infinite scrolling, Lazy load images)
 
-**Link:** [https://movix-application.netlify.app](https://movix-application.netlify.app)
+**Demo:** [https://movix-application.netlify.app](https://movix-application.netlify.app)
 
 **API:** [https://www.themoviedb.org](https://www.themoviedb.org)
 
