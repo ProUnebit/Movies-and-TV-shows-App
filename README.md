@@ -1,10 +1,9 @@
 # Movix Application
 
-<sub>*Turn on VPN if you are from Russia 😉</sub>
-
 **About:** Movies & TV shows application (React, RRD 6, Redux, Infinite scrolling, Lazy load images)
 
-**Demo:** [https://movix-application.netlify.app](https://movix-application.netlify.app)
+**Demo:** [https://movix-application.netlify.app](https://movix-application.netlify.app) <br/>
+<sub>Turn on VPN if you are from Russia 😉</sub>
 
 **API:** [https://www.themoviedb.org](https://www.themoviedb.org)
 
